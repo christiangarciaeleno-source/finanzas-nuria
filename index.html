@@ -301,12 +301,36 @@ function render() {
 
 
 const FRASES = [
-  'Cada euro que apartas es un paso hacia lo que quieres. Tú puedes.',
-  'Ahorrar es regalarle tranquilidad a tu yo del futuro.',
-  'No hace falta hacerlo perfecto, solo seguir. Vas mejor de lo que crees.',
-  'Los grandes días se construyen con pequeños pasos como este.',
-  'Mirar tus cuentas ya es cuidarte. Estás haciendo algo muy valiente.',
-  'Un mal mes no borra lo que has avanzado. Sigue, que lo estás logrando.'
+  "Cada euro que apartas es un paso hacia lo que quieres. Tú puedes.",
+  "Ahorrar es regalarle tranquilidad a tu yo del futuro.",
+  "No hace falta hacerlo perfecto, solo seguir. Vas mejor de lo que crees.",
+  "Los grandes días se construyen con pequeños pasos como este.",
+  "Mirar tus cuentas ya es cuidarte. Estás haciendo algo muy valiente.",
+  "Un mal mes no borra lo que has avanzado. Sigue, que lo estás logrando.",
+  "Hoy no tienes que ahorrarlo todo. Con un poquito ya sumas.",
+  "Tu boda va a ser preciosa, y esto también es parte de ella.",
+  "Eres constante, y eso pesa más que cualquier cifra de un mes.",
+  "Lo que hoy cuesta un poco, mañana te da libertad.",
+  "Respira. Vas por buen camino, aunque no siempre lo notes.",
+  "Cada vez que anotas un gasto, tienes más control y más calma.",
+  "Los sueños grandes se pagan a plazos pequeños. Y tú ya estás en ello.",
+  "Estás construyendo algo bonito. Ten paciencia contigo.",
+  "Nadie ahorra sin tropezar. Lo importante es que vuelves a intentarlo.",
+  "Confía en ti: ya has empezado, y eso es lo más difícil.",
+  "Tu esfuerzo de hoy es el abrazo que te das a ti misma en el futuro.",
+  "Ahorrar no es privarte. Es elegir lo que de verdad te hace feliz.",
+  "Un día a la vez, un euro a la vez. Así se llega lejos.",
+  "Estás más cerca de tu meta que ayer.",
+  "Puedes con esto y con más. Ya lo has demostrado.",
+  "Celebra lo pequeño: cada mes que llevas tus cuentas, ganas.",
+  "Ordenar tu dinero es ordenar tu tranquilidad. Bien hecho.",
+  "No te compares. Tu ritmo también te lleva a donde quieres.",
+  "Hay días flojos y días fuertes. Todos suman.",
+  "Mereces llegar a ese día sin agobios. Sigue así.",
+  "Lo estás haciendo mejor de lo que piensas. De verdad.",
+  "La constancia es tu superpoder. Hoy también cuenta.",
+  "Ahorrar es un acto de cariño hacia la vida que quieres tener.",
+  "Sonríe: cada apunte de hoy es un ladrillo de tu futuro."
 ];
 function animo() {
   const total = Object.values(data.months).reduce((t, m) => t + m.variables.filter(v => /ahorro|boda/i.test(v.nombre)).reduce((s, v) => s + v.real, 0), 0);
